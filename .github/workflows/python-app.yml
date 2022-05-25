@@ -27,14 +27,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install --upgrade requests pycryptodome .
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run realme-ota
       run: |
         realme-ota -h
-#        realme-ota RMX3363EEA RMX3363_11.A.04_0040_202108031705 2 0 ||
-#        realme-ota RMX3363EEA RMX3363_11.A.04_0040_202108031705 2 01000100 ||
-#        realme-ota RMX3363 RMX3363_11.A.04_0040_202108031705 2 01000100 ||
-#        realme-ota RMX3363 RMX3363_11.A.04_0040_202108031705 2 0 ||
         realme-ota RMX3363EEA RMX3363_11.A.04_0000_000000000000 2 0 ||
         realme-ota RMX3363EEA RMX3363_11.A.04_0000_000000000000 3 0 ||
         realme-ota RMX3363 RMX3363_11.A.04_0000_000000000000 2 0
