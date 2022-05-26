@@ -30,7 +30,7 @@ jobs:
     - name: Run realme-ota
       run: |
         realme-ota -h
-        realme-ota -r 0 RMX3363 RMX3363_11.A.04_0040_202108031705 2 01000100 ||
+        realme-ota -r 0 RMX3363 RMX3363_11.A.04_0040_202108031705 2 10011110 || # Brazil?
         realme-ota -r 0 RMX3363 RMX3363_11.A.04_0040_202108031705 2 0 ||
         realme-ota -r 0 RMX3363 RMX3363_11.A.04_0000_000000000000 2 0
         
